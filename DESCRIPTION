@@ -1,0 +1,20 @@
+Package: kage
+Type: Package
+Title: Get Korean Age and Global Age
+Version: 0.1.0
+Authors@R: person("Nam-Hee", "Kim", email = "nhk2120@columbia.edu",
+  role = c("aut", "cre"))
+Description: Korean age is different from typical global age. Get your Korean age
+    by entering your birthday and any date. The format should be in 
+    year-month-date ("1999-01-01"). After entering two dates, simply enter T for Korean age
+    and F for global age. Example: kage("1996-05-28", "2019-10-17", T)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    MESS
+RoxygenNote: 6.1.99.9001
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

@@ -1,0 +1,36 @@
+---
+title: "kage package explained"
+author: "Nam Hee Kim"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{kage package explained}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Korean age explained
+
+Unlike most parts of the world, Korea has it's own age system. In many countries, age increases as your birthday passes. However, in Korea, age increases at new year. In addition, Korean's age starts from 1 not 0.  
+Because of this, there can be up to two years gaps in Korea age and global age.  
+
+# `kage` function
+
+kage function basically gives you the Korean age or a global age. There are three arguments in `kage`.  
+x is the older date such as birthday.  
+y is the newer date which can be any date after x.  
+z is either T or F. T gives you Korean age while F gives you global age.  
+e.g. kage("1996-05-28", "2019-10-17", T)
+
+    24
+    
+```{r setup}
+library(kage)
+```
