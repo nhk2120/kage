@@ -11,7 +11,7 @@ kage(x, y, z)
 
 \item{y}{Any date in a form of year-month-day.}
 
-\item{z}{T for Korean age. F for global age.}
+\item{z}{K for Korean age. G for global age.}
 }
 \value{
 Korean or global age for given two dates: \code{x} and \code{y}.
@@ -20,6 +20,6 @@ Korean or global age for given two dates: \code{x} and \code{y}.
 Get Korean Age or Global Age
 }
 \examples{
-kage("1996-05-28", "2019-10-17", T)
-kage("1992-04-18", "2005-03-04", F)
+kage("1996-05-28", "2019-10-17", "K")
+kage("1992-04-18", "2005-03-04", "G")
 }

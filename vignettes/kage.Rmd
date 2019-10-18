@@ -26,8 +26,8 @@ Because of this, there can be up to two years gaps in Korea age and global age.
 kage function basically gives you the Korean age or a global age. There are three arguments in `kage`.  
 x is the older date such as birthday.  
 y is the newer date which can be any date after x.  
-z is either T or F. T gives you Korean age while F gives you global age.  
-e.g. kage("1996-05-28", "2019-10-17", T)
+z is either K or G. K gives you Korean age while G gives you global age.  
+e.g. kage("1996-05-28", "2019-10-17", "K")
 
     24
     
